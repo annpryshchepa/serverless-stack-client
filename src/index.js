@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import config from './config';
+import { Amplify } from 'aws-amplify';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Amplify } from 'aws-amplify';
-import config from './config';
 
 Amplify.configure({
   Auth: {
